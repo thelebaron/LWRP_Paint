@@ -54,7 +54,7 @@ public class PaintRaycast : MonoBehaviour
         Texture2D tex = rend.material.GetTexture(_MyFloatID) as Texture2D;
         if (tex == null)
         {
-            tex = new Texture2D(512,512, TextureFormat.RGBA32, false, false);
+            tex = new Texture2D(1024,1024, TextureFormat.RGBA32, false, false);
             tex.filterMode = FilterMode.Point;
             rend.material.SetTexture(_MyFloatID, tex);
         }
